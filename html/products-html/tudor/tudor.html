@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tudor Black-Bay GMT</title> <!-- name of product-->
+    <link rel="stylesheet" href="../../../css/product.css"> <!-- css file-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../gallery.html">Gallery</a></li>
+                    <li><a href="../../../login.html">Login</a></li> 
+                    <li><a href="../../../about.html">About</a></li>
+            </div>
+            <div class="nav-center">
+                <a href="../../../index.html" class="logo-link">
+                    <!-- Make sure the image path is correct -->
+                    <img src="../../../PHOTOS/LOGO/Chrono Rose - png.png" class="logo-image" alt="Chrono Rose Logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Back button-->
+    <div class="back">
+        <button onclick="history.back()" class="back-button">← Back</button>
+    </div>
+    
+    <!-- Product page layout container -->
+    <main class="product-container">
+        <!-- Product images section -->
+        <!-- image size 900 * 1200 -->
+        <div class="product-images">
+            <img src="/PHOTOS/watches/product/Tudor/tudor pepsi gmt.png" alt="front"> <!--image location-->
+        </div>
+        <div class="product-details">
+            <h1>Tudor Black Bay GMT</h1> <!--timepiece name-->
+            <p class="sku">Reference: M79830RB-0001</p> <!--refference-->
+            <div class="price-contact">
+                <p class="price">18,280.00 NIS</p> <!--price-->
+                <!-- contact button-->
+                <button class="contact-button" onclick="openContactForm()">Contact for Inquiries</button>
+            </div>            
+            <!-- Contact Modal -->
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeContactForm()">&times;</span>
+                    <h2>Contact Us</h2>
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+
+            
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <p>
+                The Tudor Black Bay GMT, in Stainless Steel case and a "Pepsi" Rotating bezel.
+            </p>
+    
+            <h3>Design and Features:</h3>
+            <ul>
+                <li><strong>Case:</strong> 41mm steel case with polished and satin finish, Waterproof to 200m.</li>
+                <li><strong>Movement:</strong> Manufacture Calibre MT5652, Self-winding mechanical movement with bidirectional rotor system.</li>
+                <li><strong>Functionds:</strong>Hours, Minutes, Seconds, GMT hand. Enables to track another Timezone.</li>
+                <li><strong>Dial:</strong> Black, Domed.</li>
+                <li><strong>Bracelet:</strong> Riveted steel bracelet with polished and satin finish with folding clasp and safety catch.</li>
+            </ul>
+            <p>Official Webite: <a href="https://tudorwatch.com"target="_blank">Tudor</a></p> <!--link to the official site-->
+            <a href="/code/html/table.html" target="_blank">Water-Resistance Guide</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CHRONO ROSE - Shmuel Rosenbluth.
+                    <br> All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="../../../privacy-policy.html">Privacy Policy</a> |
+                <a href="../../../terms-of-use.html">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+    <!--js for the contact popup-->
+    <script src="/code/js/product.js"></script>    
+</body>
+</html>

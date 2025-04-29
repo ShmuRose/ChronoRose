@@ -1,0 +1,196 @@
+/* --- style.css --- */
+
+/* Basic Reset & Body Style */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Example font - choose a suitable luxury font */
+    line-height: 1.6;
+    background-color: #fdfdfd; /* Very light grey or white */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #555; /* Default link color */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #000; /* Darker color on hover */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none; /* Removes the default bullet points */
+    padding: 0;       /* Removes default padding */
+    margin: 0;        /* Removes default margin */
+}
+
+/* Header and Navigation Bar */
+.site-header {
+    background-color: #ffffff; /* White background */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky; /* Make navbar stick to top on scroll */
+    top: 0;
+    z-index: 1000; /* Ensure navbar stays on top */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Key for layout: pushes children apart */
+    align-items: center; /* Vertically align items */
+    max-width: 1400px; /* Max width of nav content */
+    margin: 0 auto; /* Center the nav content container */
+    padding: 0 30px; /* Padding left/right */
+    height: 80px; /* Set a fixed height for the navbar */
+    box-sizing: border-box;
+}
+
+/* Navigation Sections */
+.nav-left {
+    flex: 1; /* Allows this section to grow */
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+}
+
+.nav-center {
+    flex: 0 1 auto; /* Don't grow, don't shrink, base size is auto */
+    text-align: center; /* Center logo within its container */
+}
+
+.nav-right {
+    flex: 1; /* Allows this section to grow, balancing the left */
+    display: flex;
+    justify-content: flex-end; /* Align potential future icons to the end (right) */
+}
+
+
+/* Navigation Links Styling */
+.nav-links { /* This class is on the <ul> inside .nav-left */
+    display: flex; /* Arranges list items (flex children) in a row by default */
+}
+
+.nav-links li {
+    margin-right: 25px; /* Space between nav items */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* No margin on the last item */
+}
+
+.nav-links a {
+    font-size: 0.95em;
+    font-weight: 500; /* Slightly bolder text */
+    text-transform: uppercase; /* Optional: Uppercase nav links */
+    letter-spacing: 0.5px; /* Optional: Slight letter spacing */
+    color: #333; /* Darker color for nav links */
+    padding: 10px 0; /* Add some padding for easier clicking */
+    position: relative; /* For potential hover effects */
+}
+
+.nav-links a::after { /* Example hover effect: underline */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* Logo Styling */
+.logo-link {
+    display: inline-block; /* Allows setting height/line-height */
+}
+
+.logo-image {
+    max-height: 50px; /* Control the max height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align image nicely if text is beside it */
+}
+
+/* Main Content Area Basic Styling */
+main {
+    padding: 40px 20px; /* Add some padding around the main content */
+    max-width: 1200px; /* Limit content width */
+    margin: 20px auto; /* Center main content and add space from header */
+}
+
+.content-section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+/* Example Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f0f0f0; /* Light background for hero */
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #222; /* Dark footer */
+    color: #ccc;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px; /* Space above footer */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #aaa;
+    margin: 0 10px;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}

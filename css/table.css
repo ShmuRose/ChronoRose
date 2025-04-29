@@ -1,0 +1,40 @@
+/* Styling for the H1 heading */
+h1 {
+  font-family: sans-serif; /* Simple, clean font */
+  font-size: 25px; /* Text size */
+  text-align: center; /* Center the heading horizontally */
+}
+
+/* Styling for the table */
+table {
+  border-collapse: collapse; /* Merge table cell borders together */
+  border: 2px solid rgb(0, 0, 0); /* Black border around the table */
+  font-family: sans-serif; /* Font for the table content */
+  font-size: 0.8rem; /* Slightly smaller text size */
+  letter-spacing: 1px; /* Space between letters */
+  text-align: center; /* Center text inside table cells */
+  width: 90%; /* Table width = 90% of the parent container */
+  max-width: 800px; /* Maximum table width = 800 pixels */
+  margin: 20px auto; /* 20px margin top & bottom, auto center horizontally */
+}
+
+/* Styling for the table header (thead) */
+thead {
+  background-color: rgb(255, 255, 255); /* White background */
+}
+
+/* Styling for cells that represent a "No" (negative answer) */
+.td-no {
+  background-color: #d3d3d3; /* Light gray background */
+}
+
+/* Styling for all table headers (th) and data cells (td) */
+th, td {
+  border: 1px solid rgb(0, 0, 0); /* Black border between cells */
+  padding: 8px 10px; /* Inner padding inside the cells */
+}
+
+/* Center the text in the last cell of every row */
+td:last-of-type {
+  text-align: center;
+}
