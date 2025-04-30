@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Successful login
         showFloatingMessage("Login successful!");
         setTimeout(() => {
-            window.location.href = 'html/gallery.html';
+            window.location.href = 'gallery.html';
         }, 2000);
     });
 });
