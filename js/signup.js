@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show success message and redirect
         showFloatingMessage("Sign up successful!");
         setTimeout(() => {
-            window.location.href = '/code/html/gallery.html'; // Redirect to the gallery page
+            window.location.href = 'html/gallery.html'; // Redirect to the gallery page
         }, 2000);
     });
 });
