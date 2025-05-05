@@ -40,6 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         
+        //check email not empty
+        if (!email || !password) {
+            showFloatingMessage("Please fill in all the fields.", 2500, 'error');
+            return;
+        }
 
         // Basic validation
         if (!email.includes('@')) {
