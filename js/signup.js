@@ -23,6 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirmPassword').value;
+        
+        const nameRegex = /^[A-Za-z\u0590-\u05FF]+$/; // Allows English & Hebrew letters
+            // Name validation
+        if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
+            showFloatingMessage("Names can only contain letters.", 2500, 'error');
+            return;
+        }
 
         // Check if email contains '@'
         if (!email.includes('@')) {
