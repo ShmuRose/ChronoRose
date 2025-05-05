@@ -24,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirmPassword').value;
         
+        if (!firstName || !lastName || !email || !password || !confirmPassword) {
+            showFloatingMessage("Please fill in all the fields.", 2500, 'error');
+            return;
+        }
+        
         const nameRegex = /^[A-Za-z\u0590-\u05FF]+$/; // Allows English & Hebrew letters
             // Name validation
         if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
