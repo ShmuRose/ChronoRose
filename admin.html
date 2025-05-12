@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - User Dashboard</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--icon pack (trash and pen)-->
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-left">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Brands</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-center">
+        <a href="index.html" class="logo-link">
+          <img src="PHOTOS/LOGO/Chrono Rose - png.png" class="logo-image" alt="Chrono Rose Logo">
+        </a>
+      </div>
+      <div class="nav-right">
+        <span id="userGreeting"></span>
+        <button id="logoutBtn" class="logout-btn logout" style="display: none;">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="policy-container">
+    <h1>Registered Users</h1>
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Users will be injected here -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 CHRONO ROSE - Shmuel Rosenbluth. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-of-use.html">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/admin.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
