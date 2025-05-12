@@ -1,0 +1,40 @@
+/* Greeting and Logout Button Styling */
+.nav-right {
+    display: flex;
+    align-items: center;  /* Ensures vertical alignment of items */
+    justify-content: flex-end;  /* Pushes items to the right */
+}
+
+#userGreeting {
+    color: #333;  /* Dark text color */
+    font-size: 16px;  /* Slightly larger text size */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;  /* Space between greeting text and the button */
+}
+
+#userGreeting span {
+    font-weight: bold;  /* Make the first and last name bold */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logout-btn {
+    background-color: #eaeaea;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-left: 10px;  /* Add space on the left of the button (optional, just in case) */
+}
+
+.logout-btn:hover {
+    background-color: #ccc;
+}
+
+.logout-btn:focus {
+    outline: none;  /* Remove focus outline */
+}
